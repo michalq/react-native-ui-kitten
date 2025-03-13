@@ -195,7 +195,7 @@ export class ListItem extends React.Component<ListItemProps> {
     return (
       <TouchableWeb
         {...touchableProps}
-        style={[evaStyle.container, styles.container, webStyles.container, style]}
+        style={[evaStyle.container, styles.container, style]}
         onPressIn={this.onPressIn}
         onPressOut={this.onPressOut}
       >
@@ -218,11 +218,5 @@ const styles = StyleSheet.create({
   },
   description: {
     textAlign: 'left',
-  },
-});
-
-const webStyles = Platform.OS === 'web' && StyleSheet.create<WebStyles>({
-  container: {
-    outlineWidth: 0,
   },
 });

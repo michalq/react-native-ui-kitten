@@ -179,7 +179,7 @@ export class ProgressBar extends React.PureComponent<ProgressBarProps> {
       const validProgress = this.clamp(progress);
       const width = `${validProgress * 100}%`;
 
-      indicatorStyles.push({ width });
+      indicatorStyles.push({ width: width as `${number}%` });
     }
 
     return (
