@@ -8,7 +8,6 @@ import React from 'react';
 import {
   GestureResponderEvent,
   ImageProps,
-  Platform,
   StyleSheet,
   View,
   ViewProps,
@@ -44,11 +43,6 @@ export interface ListItemProps extends TouchableWebProps, ListItemStyledProps {
 }
 
 export type ListItemElement = React.ReactElement<ListItemProps>;
-
-
-type WebStyles = {
-  container: StyleType;
-};
 
 /**
  * A single item rendered in List.
